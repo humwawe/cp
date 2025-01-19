@@ -15,7 +15,7 @@ public:
     vector dis = {0};
     unordered_map<int, int> last_depth;
 
-    auto dfs = [&](auto &self, int x, int fa, int top_depth) -> void {
+    auto dfs = [&](this auto &&dfs, int x, int fa, int top_depth) -> void {
       int color = nums[x];
       int old_depth = last_depth[color];
       top_depth = max(top_depth, old_depth);
@@ -25,14 +25,14 @@ public:
       for (auto &[y, w]: g[x]) {
         if (y != fa) {
           dis.push_back(dis.back() + w);
-          self(self, y, x, top_depth);
+          dfs(y, x, top_depth);
           dis.pop_back();
         }
       }
       last_depth[color] = old_depth;
     };
 
-    dfs(dfs, 0, -1, 0);
+    dfs(0, -1, 0);
     return {ans.first, -ans.second};
   }
 };

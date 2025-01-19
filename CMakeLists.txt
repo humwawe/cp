@@ -1,11 +1,12 @@
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.27)
 project(cp)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 
-include_directories(/usr/local/include
+include_directories(
     src/leetcode/util)
 
 add_executable(cp
-    src/leetcode/c432/p4.cpp
+    src/leetcode/c433/p2.cpp
+    #    src/leetcode/c433/p4.cpp
 )
