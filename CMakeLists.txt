@@ -7,6 +7,8 @@ include_directories(
     src/leetcode/util)
 
 add_executable(cp
-    src/leetcode/c433/p2.cpp
-    #    src/leetcode/c433/p4.cpp
+    src/leetcode/c434/p1.cpp
+    src/leetcode/c434/p2.cpp
+    src/leetcode/c434/p3.cpp
+    src/leetcode/c434/p4.cpp
 )
