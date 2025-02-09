@@ -25,8 +25,3 @@ public:
     return res;
   }
 };
-
-int main() {
-  Solution s;
-  cout << s.countSubstrings("29") << endl;
-}
