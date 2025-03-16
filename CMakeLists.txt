@@ -6,11 +6,13 @@ set(CMAKE_CXX_STANDARD 23)
 include_directories(
     src/leetcode/util)
 
+add_definitions(-DLC_LOCAL)
+
 add_executable(cp
-    src/leetcode/c439/p1.cpp
-    src/leetcode/c439/p2.cpp
-    src/leetcode/c439/p3.cpp
-    src/leetcode/c439/p4.cpp
+    src/leetcode/b152/p1.cpp
+    src/leetcode/b152/p2.cpp
+    src/leetcode/b152/p3.cpp
+    src/leetcode/b152/p4.cpp
     src/leetcode/c440/p1.cpp
     src/leetcode/c440/p2.cpp
     src/leetcode/c440/p3.cpp
