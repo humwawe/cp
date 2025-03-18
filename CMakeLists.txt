@@ -13,4 +13,5 @@ add_executable(cp
     src/leetcode/c441/p2.cpp
     src/leetcode/c441/p3.cpp
     src/leetcode/c441/p4.cpp
+    src/nowcoder/s2/j.cpp
 )
