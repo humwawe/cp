@@ -130,13 +130,3 @@ public:
   }
 };
 
-
-int main() {
-  Solution s;
-  vector<int> nums{9, 3};
-  vector<vector<int>> q{{0, 17, 1, 0}};
-  auto result_array = s.resultArray(nums, 2, q);
-  for (auto &x: result_array) {
-    cout << x << " ";
-  }
-}
