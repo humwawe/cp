@@ -15,23 +15,14 @@ string to_string(const char *s) {
   return to_string((string) s);
 }
 
+string to_string(char c) {
+  return "'" + string{c} + "'";
+}
+
 string to_string(bool b) {
   return (b ? "true" : "false");
 }
 
-string to_string(vector<bool> v) {
-  bool first = true;
-  string res = "{";
-  for (int i = 0; i < static_cast<int>(v.size()); i++) {
-    if (!first) {
-      res += ", ";
-    }
-    first = false;
-    res += to_string(v[i]);
-  }
-  res += "}";
-  return res;
-}
 
 template<size_t N>
 string to_string(bitset<N> v) {
@@ -82,3 +73,9 @@ void _out(Head H, Tail... T) {
 }
 
 #define debug(...) cerr << "[" << #__VA_ARGS__ << "]:", _out(__VA_ARGS__)
+
+// #ifdef LOCAL
+// #include "debug.h"
+// #else
+// #define debug(...) 42
+// #endif
