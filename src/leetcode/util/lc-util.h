@@ -6,5 +6,6 @@
 #define LC_UTIL_H
 #include <bits/stdc++.h>
 using namespace std;
+#include "debug.h"
 
 #endif //LC_UTIL_H
