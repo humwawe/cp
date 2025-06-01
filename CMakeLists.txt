@@ -9,8 +9,8 @@ include_directories(
 add_definitions(-DLC_LOCAL)
 
 add_executable(cp
-    src/leetcode/c451/p1.cpp
-    src/leetcode/c451/p2.cpp
-    src/leetcode/c451/p3.cpp
-    src/leetcode/c451/p4.cpp
+    src/leetcode/c452/p1.cpp
+    src/leetcode/c452/p2.cpp
+    src/leetcode/c452/p3.cpp
+    src/leetcode/c452/p4.cpp
 )
